@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Toiture & Couverture – Conseils Artisan Hoffmann Seine-et-Marne (77)</title>
+  <meta name="description" content="Conseils, astuces et guides pratiques sur la toiture, la zinguerie, l'étanchéité et la façade par les experts Artisan Hoffmann en Seine-et-Marne (77)." />
+  <link rel="canonical" href="https://www.peter-hoffmann-couverture.fr/blog.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bleu:#002395; --rouge:#ED2939; --blanc:#FFFFFF; --ardoise:#1a1f2e; --gris:#f4f5f8; }
+    html { scroll-behavior: smooth; }
+    body { font-family:'DM Sans',sans-serif; color:var(--ardoise); background:var(--blanc); overflow-x:hidden; }
+    .tricolor-bar { position:fixed; top:0; left:0; right:0; height:5px; background:linear-gradient(to right,var(--bleu) 33.3%,var(--blanc) 33.3% 66.6%,var(--rouge) 66.6%); z-index:9999; }
+    header { position:fixed; top:5px; left:0; right:0; background:rgba(0,35,149,0.97); backdrop-filter:blur(8px); z-index:1000; padding:0 2rem; height:70px; display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--rouge); }
+    .header-logo img { height:52px; object-fit:contain; }
+    nav a { color:var(--blanc); text-decoration:none; font-family:'Montserrat',sans-serif; font-weight:600; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0.9rem; }
+    nav a:hover { color:var(--rouge); }
+    .header-cta { background:var(--rouge); color:var(--blanc) !important; padding:0.55rem 1.2rem !important; border-radius:4px !important; font-weight:700 !important; }
+
+    .page-hero { padding:140px 0 60px; background:var(--ardoise); position:relative; overflow:hidden; }
+    .page-hero::before { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(0,35,149,0.8) 0%,rgba(26,31,46,0.9) 60%,rgba(237,41,57,0.2) 100%); }
+    .page-hero-stripe { position:absolute; right:0; top:0; bottom:0; width:6px; background:var(--rouge); }
+    .page-hero-content { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:0 2rem; }
+    .page-eyebrow { font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--rouge); margin-bottom:0.8rem; display:flex; align-items:center; gap:0.6rem; }
+    .page-eyebrow::before { content:''; width:24px; height:2px; background:var(--rouge); }
+    .page-hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,5.5rem); line-height:0.92; color:var(--blanc); margin-bottom:1rem; }
+    .page-hero p { font-size:1.05rem; color:rgba(255,255,255,0.7); max-width:600px; line-height:1.7; }
+
+    section { padding:5rem 0; }
+    .container { max-width:1200px; margin:0 auto; padding:0 2rem; }
+    .section-eyebrow { font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--rouge); margin-bottom:0.8rem; display:flex; align-items:center; gap:0.6rem; }
+    .section-eyebrow::before { content:''; width:24px; height:2px; background:var(--rouge); }
+    .section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.2rem,4vw,3.5rem); line-height:0.95; color:var(--ardoise); margin-bottom:2rem; }
+
+    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; }
+
+    .blog-card {
+      border-radius:10px;
+      overflow:hidden;
+      background:var(--blanc);
+      border:1px solid #e8eaf0;
+      box-shadow:0 2px 12px rgba(0,0,0,0.06);
+      transition:transform 0.25s, box-shadow 0.25s;
+      text-decoration:none;
+      color:var(--ardoise);
+      display:flex;
+      flex-direction:column;
+    }
+    .blog-card:hover { transform:translateY(-6px); box-shadow:0 12px 35px rgba(0,0,0,0.12); }
+
+    .blog-card-img {
+      width:100%; height:180px;
+      background:linear-gradient(135deg,var(--ardoise),#2d3448);
+      display:flex; align-items:center; justify-content:center;
+      font-size:3rem;
+      position:relative;
+    }
+    .blog-card-img .img-label {
+      position:absolute; bottom:0; left:0; right:0;
+      padding:0.5rem 1rem;
+      background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+      font-family:'Montserrat',sans-serif;
+      font-size:0.68rem; font-weight:700;
+      text-transform:uppercase; letter-spacing:0.1em;
+      color:rgba(255,255,255,0.8);
+    }
+
+    .blog-tag {
+      display:inline-block;
+      background:var(--bleu);
+      color:var(--blanc);
+      font-family:'Montserrat',sans-serif;
+      font-size:0.65rem; font-weight:700;
+      text-transform:uppercase; letter-spacing:0.1em;
+      padding:0.25rem 0.7rem; border-radius:3px;
+      margin-bottom:0.8rem;
+    }
+    .blog-tag.rouge { background:var(--rouge); }
+
+    .blog-card-body { padding:1.6rem; flex:1; display:flex; flex-direction:column; }
+    .blog-card-body h2 {
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem;
+      line-height:1.4; color:var(--ardoise); margin-bottom:0.7rem;
+    }
+    .blog-card-body p { font-size:0.87rem; color:#6a7080; line-height:1.65; flex:1; }
+    .blog-read-more {
+      margin-top:1.2rem;
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.78rem;
+      text-transform:uppercase; letter-spacing:0.08em;
+      color:var(--rouge); display:flex; align-items:center; gap:0.4rem;
+    }
+
+    .blog-meta { font-size:0.75rem; color:#9a9fae; margin-bottom:0.5rem; font-family:'Montserrat',sans-serif; }
+
+    footer { background:var(--ardoise); color:var(--blanc); padding:3rem 0 0; position:relative; }
+    footer::before { content:''; position:absolute; top:0; left:0; right:0; height:5px; background:linear-gradient(to right,var(--bleu) 33.3%,var(--blanc) 33.3% 66.6%,var(--rouge) 66.6%); }
+    .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding:1.2rem 2rem; display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:rgba(255,255,255,0.3); }
+    .footer-bottom a { color:rgba(255,255,255,0.4); text-decoration:none; }
+    .footer-bottom a:hover { color:var(--rouge); }
+
+    @media (max-width:900px) { .blog-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:600px) { nav { display:none; } .blog-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="tricolor-bar"></div>
+  <header>
+    <a href="index.html" class="header-logo"><img src="images/logo.png" alt="Artisan Hoffmann" /></a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="zones.html">Zones</a>
+      <a href="blog.html">Blog</a>
+      <a href="qui-sommes-nous.html">À propos</a>
+      <a href="index.html#devis" class="header-cta">Devis Gratuit</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-stripe"></div>
+    <div class="page-hero-content">
+      <div class="page-eyebrow">Conseils & Guides</div>
+      <h1>Blog<br>Toiture</h1>
+      <p>Conseils pratiques, guides d'entretien et informations utiles sur la couverture, la zinguerie et la façade par vos artisans en Seine-et-Marne.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">Articles récents</div>
+      <h2 class="section-title">Conseils de nos<br>experts couvreurs</h2>
+
+      <div class="blog-grid">
+
+        <a href="blog/entretien-toiture-lyon.html" class="blog-card">
+          <div class="blog-card-img" style="padding:0;overflow:hidden;">
+            <img src="images/blog-entretien.png" alt="Entretien toiture Seine-et-Marne" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">15 novembre 2024 · 6 min de lecture</div>
+            <div class="blog-tag">Entretien</div>
+            <h2>Entretien de toiture en Seine-et-Marne : à quelle fréquence faut-il le faire ?</h2>
+            <p>Votre toiture est votre première protection contre les intempéries. Mais combien de fois faut-il l'inspecter et l'entretenir ? Nos experts vous donnent toutes les réponses adaptées au climat de la Seine-et-Marne.</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+        <a href="blog/reparation-fuite-toiture.html" class="blog-card">
+          <div class="blog-card-img" style="padding:0;overflow:hidden;">
+            <img src="images/blog-fuite.png" alt="Réparation fuite toiture" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">3 octobre 2024 · 5 min de lecture</div>
+            <div class="blog-tag rouge">Urgence</div>
+            <h2>Fuite de toiture : comment réagir et quand appeler un couvreur ?</h2>
+            <p>Une fuite de toiture peut rapidement entraîner des dégâts considérables. Découvrez les bons réflexes à adopter en urgence et comment identifier l'origine d'une infiltration.</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+        <a href="blog/nettoyage-demoussage-toiture.html" class="blog-card">
+          <div class="blog-card-img" style="padding:0;overflow:hidden;">
+            <img src="images/blog-demoussage.png" alt="Nettoyage démoussage toiture" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">18 septembre 2024 · 4 min de lecture</div>
+            <div class="blog-tag">Nettoyage</div>
+            <h2>Nettoyage et démoussage de toiture : pourquoi c'est indispensable</h2>
+            <p>La mousse et les lichens fragilisent votre toiture en profondeur. Voici pourquoi le démoussage régulier est un investissement qui vous évitera de coûteuses réparations.</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+        <a href="blog/gouttiere-zinc-pvc.html" class="blog-card">
+          <div class="blog-card-img" style="padding:0;overflow:hidden;">
+            <img src="images/blog-gouttiere.png" alt="Gouttière zinc ou PVC" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">5 août 2024 · 5 min de lecture</div>
+            <div class="blog-tag">Zinguerie</div>
+            <h2>Gouttière zinc ou PVC : laquelle choisir pour sa maison ?</h2>
+            <p>Zinc ou PVC ? Ce choix influence la durabilité de votre installation, son esthétique et son coût. On compare les deux matériaux pour vous aider à faire le bon choix.</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+        <a href="blog/garantie-decennale-couvreur.html" class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,var(--ardoise),#2d3448);height:180px;display:flex;align-items:center;justify-content:center;font-size:4rem;">
+            🛡️
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">22 juillet 2024 · 4 min de lecture</div>
+            <div class="blog-tag rouge">Juridique</div>
+            <h2>Garantie décennale couvreur : ce que vous devez absolument savoir</h2>
+            <p>La garantie décennale est obligatoire pour tout artisan couvreur. Mais qu'est-ce qu'elle couvre exactement ? Comment vérifier qu'un artisan est bien assuré avant de signer ?</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+        <a href="blog/renovation-toiture-lyon.html" class="blog-card">
+          <div class="blog-card-img" style="padding:0;overflow:hidden;">
+            <img src="images/blog-renovation.png" alt="Rénovation toiture Seine-et-Marne" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">10 juin 2024 · 7 min de lecture</div>
+            <div class="blog-tag">Rénovation</div>
+            <h2>Rénovation de toiture en Seine-et-Marne : coût, étapes et conseils en 2024</h2>
+            <p>Vous envisagez une rénovation de toiture dans la Seine-et-Marne ? Budget, durée des travaux, matériaux conseillés — notre guide complet vous prépare à votre projet.</p>
+            <div class="blog-read-more">Lire l'article →</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="padding:2rem;">
+      <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;">Artisan Hoffmann Père et Fils — SIRET 528 876 410 — Limonest (69760)</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Artisan Hoffmann Père et Fils</span>
+      <a href="https://sakuragroup.fr" target="_blank" rel="noopener">Agence Sakura Group</a>
+    </div>
+  </footer>
+</body>
+</html>
