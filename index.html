@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artisan Hoffmann Père et Fils – Couvreur Île-de-France | Toiture, Zinguerie, Façade</title>
+  <meta name="description" content="Artisan Hoffmann Père et Fils – Couvreur expert en toiture, zinguerie, charpente, étanchéité et ravalement de façade dans le Île-de-France (69). Garantie décennale. Devis gratuit : 06 72 44 92 46." />
+  <meta name="keywords" content="couvreur Seine-et-Marne, réparation toiture Seine-et-Marne, artisan toiture 69, étanchéité Marne-la-Vallée, zinguerie Île-de-France, charpente Marne-la-Vallée, ravalement façade Seine-et-Marne" />
+  <meta name="author" content="Artisan Hoffmann Père et Fils" />
+  <link rel="canonical" href="https://www.peter-hoffmann-couverture.fr/" />
+  <meta property="og:title" content="Artisan Hoffmann – Couvreur Île-de-France" />
+  <meta property="og:description" content="Expert toiture, zinguerie, charpente et façade dans le Île-de-France. Garantie décennale. 30 ans d'expérience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.peter-hoffmann-couverture.fr/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Artisan Hoffmann Père et Fils",
+    "description": "Couvreur expert en toiture, zinguerie, charpente, étanchéité et ravalement de façade dans le Île-de-France.",
+    "telephone": "+33672449246",
+    "email": "piterhoffemann@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 Grand Chemin de Claye",
+      "addressLocality": "Annet-sur-Marne",
+      "postalCode": "77410",
+      "addressCountry": "FR"
+    },
+    "url": "https://www.peter-hoffmann-couverture.fr/",
+    "priceRange": "€€",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "hasMap": "https://maps.google.com/?q=Annet-sur-Marne+77410",
+    "sameAs": ["https://www.artisan-hoffmann.com"]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bleu:    #002395;
+      --rouge:   #ED2939;
+      --blanc:   #FFFFFF;
+      --ardoise: #1a1f2e;
+      --acier:   #2d3448;
+      --gris:    #f4f5f8;
+      --texte:   #1a1f2e;
+      --or:      #c9a84c;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--texte);
+      background: var(--blanc);
+      overflow-x: hidden;
+    }
+
+    /* ===== BARRE TRICOLORE FIXE ===== */
+    .tricolor-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(to right, var(--bleu) 33.3%, var(--blanc) 33.3% 66.6%, var(--rouge) 66.6%);
+      z-index: 9999;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 5px; left: 0; right: 0;
+      background: rgba(0, 35, 149, 0.97);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      padding: 0 2rem;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--rouge);
+    }
+
+    .header-logo img {
+      height: 75px;
+      width: auto;
+      object-fit: contain;
+      max-width: 200px;
+    }
+
+    nav { display: flex; align-items: center; gap: 0; }
+    nav a {
+      color: var(--blanc);
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.5rem 0.9rem;
+      border-radius: 3px;
+      transition: color 0.2s, background 0.2s;
+    }
+    nav a:hover { color: var(--rouge); }
+
+    .header-cta {
+      background: var(--rouge);
+      color: var(--blanc) !important;
+      padding: 0.55rem 1.2rem !important;
+      border-radius: 4px !important;
+      font-weight: 700 !important;
+    }
+    .header-cta:hover { background: #c01e2a !important; color: var(--blanc) !important; }
+
+    .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .burger span { width: 26px; height: 2px; background: var(--blanc); border-radius: 2px; }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      background: var(--ardoise);
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 75px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(0,35,149,0.88) 0%, rgba(26,31,46,0.92) 50%, rgba(237,41,57,0.30) 100%);
+      z-index: 1;
+    }
+
+    /* Motif toiture en background */
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.06;
+      background-image:
+        repeating-linear-gradient(
+          -45deg,
+          #ffffff 0px, #ffffff 1px,
+          transparent 1px, transparent 40px
+        );
+      z-index: 0;
+    }
+
+    /* Bande rouge décorative */
+    .hero-stripe {
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 8px;
+      background: var(--rouge);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-left {}
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--rouge);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 30px; height: 2px;
+      background: var(--rouge);
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 7vw, 6.5rem);
+      line-height: 0.92;
+      color: var(--blanc);
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title .accent-bleu { color: #6ea8ff; }
+    .hero-title .accent-rouge { color: var(--rouge); }
+
+    .hero-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+      max-width: 480px;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50px;
+      padding: 0.4rem 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.88);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .badge .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--rouge);
+    }
+    .badge.green .dot { background: #2ecc71; }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--rouge);
+      color: var(--blanc);
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: #c01e2a; transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: transparent;
+      color: var(--blanc);
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--blanc); transform: translateY(-2px); }
+
+    /* Hero right: carte impact */
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .impact-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-left: 4px solid var(--rouge);
+      border-radius: 8px;
+      padding: 1.4rem 1.8rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .impact-card.bleu { border-left-color: var(--bleu); background: rgba(0,35,149,0.25); }
+    .impact-card.rouge { border-left-color: var(--rouge); }
+    .impact-card.or { border-left-color: var(--or); }
+
+    .impact-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      line-height: 1;
+      color: var(--blanc);
+    }
+    .impact-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 0.2rem;
+    }
+
+    .urgence-banner {
+      background: var(--rouge);
+      border-radius: 8px;
+      padding: 1.2rem 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .urgence-banner .urg-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blanc);
+    }
+    .urgence-banner .urg-phone {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      color: var(--blanc);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    /* ===== SECTION BANDEAU STATS ===== */
+    .stats-band {
+      background: var(--bleu);
+      padding: 2rem 0;
+    }
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem;
+      color: var(--blanc);
+      line-height: 1;
+    }
+    .stat-num span { color: var(--rouge); }
+    .stat-desc {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.65);
+      margin-top: 0.3rem;
+    }
+
+    /* ===== SECTIONS GÉNÉRALES ===== */
+    section { padding: 5rem 0; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--rouge);
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      width: 24px; height: 2px;
+      background: var(--rouge);
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      line-height: 0.95;
+      color: var(--ardoise);
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: #5a6070;
+      max-width: 580px;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+    /* ===== SERVICES ===== */
+    #services { background: var(--gris); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--blanc);
+      border-radius: 10px;
+      overflow: hidden;
+      border-top: 4px solid var(--bleu);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.13); }
+    .service-card:nth-child(even) { border-top-color: var(--rouge); }
+
+    .service-card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: var(--ardoise);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card-img-placeholder {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(135deg, var(--ardoise), var(--acier));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .service-body {
+      padding: 1.6rem;
+    }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    .service-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ardoise);
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .service-desc {
+      font-size: 0.88rem;
+      color: #6a7080;
+      line-height: 1.65;
+    }
+
+    /* ===== POURQUOI NOUS ===== */
+    #pourquoi {
+      background: var(--ardoise);
+      position: relative;
+      overflow: hidden;
+    }
+    #pourquoi::before {
+      content: 'HOFFMANN';
+      position: absolute;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20vw;
+      color: rgba(255,255,255,0.03);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    #pourquoi .section-title { color: var(--blanc); }
+    #pourquoi .section-desc { color: rgba(255,255,255,0.6); }
+    #pourquoi .section-eyebrow { color: var(--rouge); }
+    #pourquoi .section-eyebrow::before { background: var(--rouge); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-card {
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 2rem 1.8rem;
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .why-card:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(237,41,57,0.4);
+    }
+
+    .why-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      line-height: 1;
+      color: var(--rouge);
+      opacity: 0.4;
+      margin-bottom: 0.8rem;
+    }
+    .why-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--blanc);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.6rem;
+    }
+    .why-text {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+    }
+
+    /* ===== GARANTIES ===== */
+    #garanties {
+      background: var(--blanc);
+    }
+
+    .garanties-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .garanties-visual {
+      position: relative;
+    }
+
+    .garantie-badge-big {
+      background: var(--ardoise);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .garantie-badge-big::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(to right, var(--bleu) 33%, var(--blanc) 33% 66%, var(--rouge) 66%);
+    }
+
+    .garantie-shield {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+    .garantie-badge-big h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      color: var(--blanc);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .garantie-badge-big p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .garantie-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.5rem;
+    }
+    .garantie-tag {
+      background: rgba(0,35,149,0.08);
+      color: var(--bleu);
+      border: 1px solid rgba(0,35,149,0.2);
+      border-radius: 30px;
+      padding: 0.4rem 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .garanties-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .garantie-item {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .garantie-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--rouge);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .garantie-icon.bleu { background: var(--bleu); }
+
+    .garantie-item h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--ardoise);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.3rem;
+    }
+    .garantie-item p {
+      font-size: 0.88rem;
+      color: #6a7080;
+      line-height: 1.6;
+    }
+
+    /* ===== DEVIS FORM ===== */
+    #devis {
+      background: var(--gris);
+    }
+
+    .devis-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .devis-info h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--ardoise);
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .devis-contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .contact-item .ci-icon {
+      width: 44px; height: 44px;
+      border-radius: 8px;
+      background: var(--bleu);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-item .ci-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #8a90a0;
+      margin-bottom: 0.15rem;
+    }
+    .contact-item .ci-value {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ardoise);
+      text-decoration: none;
+    }
+    .contact-item .ci-value:hover { color: var(--rouge); }
+
+    .urgence-call {
+      margin-top: 2rem;
+      background: var(--rouge);
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .urgence-call .uc-icon { font-size: 2rem; }
+    .urgence-call .uc-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.3rem;
+    }
+    .urgence-call .uc-phone {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--blanc);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    /* FORM */
+    .devis-form {
+      background: var(--blanc);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--bleu);
+    }
+
+    .devis-form h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      color: var(--ardoise);
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ardoise);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1.5px solid #dde1ec;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      color: var(--ardoise);
+      background: var(--blanc);
+      transition: border-color 0.2s;
+      outline: none;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--bleu);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-submit {
+      background: var(--rouge);
+      color: var(--blanc);
+      border: none;
+      border-radius: 6px;
+      padding: 1rem 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .form-submit:hover { background: #c01e2a; transform: translateY(-2px); }
+
+    /* ===== RÉALISATIONS ===== */
+    #realisations { background: var(--blanc); }
+
+    .real-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .real-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--ardoise);
+    }
+
+    .real-item-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, var(--ardoise), var(--acier));
+      color: rgba(255,255,255,0.3);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+    }
+
+    .real-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,35,149,0.85) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.2rem;
+    }
+    .real-item:hover .real-overlay { opacity: 1; }
+
+    .real-overlay span {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--blanc);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--ardoise);
+      color: var(--blanc);
+      padding: 4rem 0 0;
+      position: relative;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(to right, var(--bleu) 33.3%, var(--blanc) 33.3% 66.6%, var(--rouge) 66.6%);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .footer-brand img { height: 55px; margin-bottom: 1rem; filter: brightness(1.2); }
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+    .footer-siret {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-col h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.55rem; }
+    .footer-col ul li a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--rouge); }
+
+    .footer-bottom {
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.3);
+    }
+    .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--rouge); }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 900px) {
+      .hero-content { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-right { display: grid; grid-template-columns: 1fr 1fr; }
+      .urgence-banner { grid-column: 1/-1; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .garanties-layout { grid-template-columns: 1fr; }
+      .devis-layout { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .real-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      nav { display: none; }
+      nav.open { display: flex; flex-direction: column; position: fixed; top: 75px; left: 0; right: 0; background: var(--bleu); padding: 1rem; gap: 0.3rem; z-index: 999; }
+      .burger { display: flex; }
+      .hero-right { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .real-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre tricolore -->
+  <div class="tricolor-bar"></div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/" class="header-logo">
+      <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/logo.png" alt="Artisan Hoffmann Père et Fils – Couvreur Île-de-France" />
+    </a>
+    <div class="burger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/">Accueil</a>
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Services</a>
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/zones.html">Zones</a>
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/blog.html">Blog</a>
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/qui-sommes-nous.html">À propos</a>
+      <a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#devis" class="header-cta">Devis Gratuit</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-stripe"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-eyebrow">🇫🇷 Artisan Français — Île-de-France</div>
+        <h1 class="hero-title">
+          Votre <span class="accent-bleu">toiture</span><br>
+          entre les<br>
+          meilleures<br>
+          <span class="accent-rouge">mains</span>
+        </h1>
+        <p class="hero-subtitle">
+          Artisan Hoffmann Père et Fils — 30 ans d'expérience en couverture, zinguerie, charpente, étanchéité et ravalement de façade dans le département de Seine-et-Marne.
+        </p>
+        <div class="hero-badges">
+          <div class="badge"><span class="dot"></span> Garantie Décennale</div>
+          <div class="badge green"><span class="dot"></span> Disponible 7j/7 – 24h/24</div>
+          <div class="badge"><span class="dot"></span> Devis Gratuit</div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#devis" class="btn-primary">📋 Demander un devis</a>
+          <a href="tel:0672449246" class="btn-secondary">📞 06 72 44 92 46</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="impact-card bleu">
+          <div class="impact-number">30</div>
+          <div class="impact-label">Ans d'expérience</div>
+        </div>
+        <div class="impact-card rouge">
+          <div class="impact-number">500<span style="font-size:2rem">+</span></div>
+          <div class="impact-label">Chantiers réalisés</div>
+        </div>
+        <div class="impact-card or">
+          <div class="impact-number">10</div>
+          <div class="impact-label">Ans de garantie décennale</div>
+        </div>
+        <div class="urgence-banner">
+          <div>
+            <div class="urg-text">🚨 Urgence Toiture 24h/24</div>
+          </div>
+          <a href="tel:0672449246" class="urg-phone" style="white-space:nowrap;font-size:1.5rem;">06 72 44 92 46</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">69<span>+</span></div>
+        <div class="stat-desc">Département du Seine-et-Marne</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">30<span>km</span></div>
+        <div class="stat-desc">Rayon d'intervention</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7j<span>/7</span></div>
+        <div class="stat-desc">Disponibilité urgences</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-desc">Satisfaction clients</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-eyebrow">Nos prestations</div>
+      <h2 class="section-title">Tous vos travaux<br>de toiture et façade</h2>
+      <p class="section-desc">De la réparation d'urgence à la rénovation complète, l'équipe Hoffmann intervient sur tous types de toitures avec les matériaux les plus durables.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/couverture.png" alt="Couverture toiture" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">🏠</div>
+            <div class="service-name">Couverture générale</div>
+            <p class="service-desc">Pose, réfection et réparation de toiture pour tous types de couvertures : tuiles, ardoises, zinc. Travail soigné et garantie décennale.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/reparation.png" alt="Réparation toiture" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">🔧</div>
+            <div class="service-name">Réparation & Rénovation toiture</div>
+            <p class="service-desc">Diagnostic précis, remplacement de tuiles cassées, réparation de fuites, consolidation de charpente. Intervention rapide.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/etancheite.png" alt="Étanchéité toiture" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">💧</div>
+            <div class="service-name">Étanchéité toiture</div>
+            <p class="service-desc">Traitement complet contre les infiltrations d'eau, pose de membranes d'étanchéité, hydrofuge. Solution durable pour toitures plates ou pentées.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real2.png" alt="Réparation ardoise" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">⚡</div>
+            <div class="service-name">Zinguerie</div>
+            <p class="service-desc">Pose et remplacement de gouttières zinc ou PVC, faîtage, noues, chéneaux, solins. Spécialiste ardoise et zinguerie depuis 30 ans.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/nettoyage.png" alt="Nettoyage démoussage" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">🌿</div>
+            <div class="service-name">Nettoyage & Démoussage</div>
+            <p class="service-desc">Nettoyage haute pression, démoussage, application d'hydrofuge et anti-mousse. Redonne vie et protection à votre toiture.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real4.png" alt="Réparation ardoise" style="width:100%;height:180px;object-fit:cover;display:block;" />
+          <div class="service-body">
+            <div class="service-icon">🏛️</div>
+            <div class="service-name">Ravalement de façade</div>
+            <p class="service-desc">Rénovation complète de façade, peinture extérieure, taloché, enduits. Redonnez du cachet à votre habitation avec nos artisans qualifiés.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI NOUS -->
+  <section id="pourquoi">
+    <div class="container">
+      <div class="section-eyebrow">Pourquoi nous choisir</div>
+      <h2 class="section-title">L'excellence<br>à la française</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.6)">Père et fils, deux générations de couvreurs au service de votre toiture. Nous intervenons partout en Seine-et-Marne avec le même exigence.</p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <div class="why-title">Garantie Décennale</div>
+          <p class="why-text">Tous nos travaux sont couverts par une garantie décennale. Vous êtes protégé 10 ans contre tout défaut de construction.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <div class="why-title">Urgences 7j/7 – 24h/24</div>
+          <p class="why-text">Tempête, fuite, dégât des eaux — nous intervenons en urgence à toute heure pour sécuriser votre toit immédiatement.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <div class="why-title">Devis Gratuit & Transparent</div>
+          <p class="why-text">Nos devis sont gratuits, détaillés et sans surprise. Vous savez exactement ce que vous payez avant de commencer.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <div class="why-title">30 ans d'expérience</div>
+          <p class="why-text">Artisan Hoffmann intervient depuis 30 ans en Seine-et-Marne. Père et fils, notre savoir-faire se transmet avec fierté.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">05</div>
+          <div class="why-title">Matériaux haut de gamme</div>
+          <p class="why-text">Nous sélectionnons uniquement des matériaux durables et certifiés, pour que votre toiture résiste aux intempéries des décennies.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">06</div>
+          <div class="why-title">Artisan local & de confiance</div>
+          <p class="why-text">Basé à Annet-sur-Marne (69), nous connaissons le tissu local, les contraintes climatiques du Seine-et-Marne et la confiance de nos clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIES -->
+  <section id="garanties">
+    <div class="container">
+      <div class="garanties-layout">
+        <div class="garanties-visual">
+          <div class="garantie-badge-big">
+            <div class="garantie-shield">🛡️</div>
+            <h3>Garantie<br>Décennale</h3>
+            <p>Votre toiture protégée 10 ans</p>
+          </div>
+          <div class="garantie-tags">
+            <span class="garantie-tag">Artisan Qualifié</span>
+            <span class="garantie-tag">Assuré RCPro</span>
+            <span class="garantie-tag">SIRET 528 876 410</span>
+            <span class="garantie-tag">Spécialiste Ardoise</span>
+            <span class="garantie-tag">Zinguerie</span>
+          </div>
+        </div>
+
+        <div class="garanties-list">
+          <div class="section-eyebrow">Nos engagements</div>
+          <h2 class="section-title">Des travaux<br>réalisés dans les règles<br>de l'art</h2>
+
+          <div class="garantie-item">
+            <div class="garantie-icon bleu">🏆</div>
+            <div>
+              <h4>Qualité de travail irréprochable</h4>
+              <p>Chaque intervention est réalisée avec soin, en respectant les normes DTU en vigueur pour la couverture et la zinguerie.</p>
+            </div>
+          </div>
+
+          <div class="garantie-item">
+            <div class="garantie-icon">⏱️</div>
+            <div>
+              <h4>Respect des délais</h4>
+              <p>Nous planifions précisément chaque chantier et respectons les délais annoncés. Votre projet avance sans mauvaise surprise.</p>
+            </div>
+          </div>
+
+          <div class="garantie-item">
+            <div class="garantie-icon bleu">💬</div>
+            <div>
+              <h4>Communication transparente</h4>
+              <p>Avant, pendant et après le chantier, nous vous tenons informé de chaque étape. Zéro surprise sur la facture finale.</p>
+            </div>
+          </div>
+
+          <div class="garantie-item">
+            <div class="garantie-icon">🔍</div>
+            <div>
+              <h4>Diagnostic avant travaux</h4>
+              <p>Nous réalisons systématiquement un diagnostic complet avant toute intervention pour identifier tous les problèmes et vous proposer la meilleure solution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉALISATIONS -->
+  <section id="realisations">
+    <div class="container">
+      <div class="section-eyebrow">Nos réalisations</div>
+      <h2 class="section-title">Nos chantiers<br>parlent d'eux-mêmes</h2>
+      <p class="section-desc">Chaque toit réparé ou rénové est une fierté. Découvrez quelques exemples de notre travail dans le Île-de-France.</p>
+
+      <div class="real-grid">
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real1.png" alt="Réfection toiture tuiles" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Réfection toiture — Marne-la-Vallée 69</span></div>
+        </div>
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real2.png" alt="Réparation ardoise" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Zinguerie — Annet-sur-Marne 69</span></div>
+        </div>
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real3.png" alt="Zinguerie gouttières" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Étanchéité — Villeurbanne 69</span></div>
+        </div>
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real4.png" alt="Réparation ardoise" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Rénovation façade — Caluire 69</span></div>
+        </div>
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real5.png" alt="Toiture neuve tuiles" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Nettoyage toiture — Écully 69</span></div>
+        </div>
+        <div class="real-item">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/real6.png" alt="Chantier couverture" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="real-overlay"><span>Charpente — Tassin 69</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVIS / CONTACT -->
+  <section id="devis">
+    <div class="container">
+      <div class="section-eyebrow">Contact & Devis</div>
+      <h2 class="section-title">Demandez votre<br>devis gratuit</h2>
+
+      <div class="devis-layout">
+        <div class="devis-info">
+          <h3>Nous sommes là pour vous</h3>
+          <p style="color:#6a7080; line-height:1.7; margin-bottom:1.5rem;">
+            Toiture abîmée, fuite détectée, rénovation à planifier ? Contactez-nous maintenant pour obtenir un devis gratuit et personnalisé. Réponse garantie sous 24h.
+          </p>
+
+          <div class="devis-contact-items">
+            <div class="contact-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <div class="ci-label">Téléphone direct</div>
+                <a href="tel:0672449246" class="ci-value">06 72 44 92 46</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <a href="mailto:piterhoffemann@gmail.com" class="ci-value">piterhoffemann@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Zone d'intervention</div>
+                <span class="ci-value" style="text-decoration:none; cursor:default;">Île-de-France – 30 km autour d'Annet-sur-Marne</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="urgence-call">
+            <div class="uc-icon">🚨</div>
+            <div>
+              <div class="uc-text">Urgence toiture — 24h/24 – 7j/7</div>
+              <a href="tel:0672449246" class="uc-phone">06 72 44 92 46</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="devis-form">
+          <h3>Votre demande de devis</h3>
+          <form action="https://formspree.io/f/maqgodzj" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Jean" required />
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Dupont" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tel">Téléphone *</label>
+                <input type="tel" id="tel" name="telephone" placeholder="06 XX XX XX XX" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jean@email.fr" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="adresse">Adresse du chantier *</label>
+                <input type="text" id="adresse" name="adresse" placeholder="10 rue de la Paix" required />
+              </div>
+              <div class="form-group">
+                <label for="cp">Code postal *</label>
+                <input type="text" id="cp" name="code_postal" placeholder="69XXX" inputmode="numeric" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="type">Type de prestation *</label>
+              <select id="type" name="prestation" required>
+                <option value="">Sélectionnez une prestation</option>
+                <option>Réparation toiture</option>
+                <option>Réfection / Rénovation toiture</option>
+                <option>Toiture neuve</option>
+                <option>Étanchéité</option>
+                <option>Zinguerie / Gouttières</option>
+                <option>Nettoyage / Démoussage</option>
+                <option>Charpente</option>
+                <option>Ravalement de façade</option>
+                <option>Urgence</option>
+                <option>Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Description du projet</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre projet : type de toit, superficie estimée, problème constaté..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">📋 Envoyer ma demande de devis</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/images/logo.png" alt="Artisan Hoffmann Père et Fils" />
+          <p>Couvreur expert depuis 30 ans dans le Île-de-France. Toiture, zinguerie, charpente, étanchéité et ravalement de façade. Père et fils au service de votre maison.</p>
+          <div class="footer-siret">SIRET : 528 876 410 — Annet-sur-Marne (77410)</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Couverture générale</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Réparation toiture</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Étanchéité</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Zinguerie</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Nettoyage toiture</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#services">Ravalement façade</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/">Accueil</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/zones.html">Zones d'intervention</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/blog.html">Blog & Conseils</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/qui-sommes-nous.html">À propos</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/#devis">Devis gratuit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0672449246">📞 06 72 44 92 46</a></li>
+            <li><a href="mailto:piterhoffemann@gmail.com">✉️ piterhoffemann@gmail.com</a></li>
+            <li><a href="https://agencesakuragroup.github.io/peter-hoffmann-couverture.fr/zones.html">📍 Île-de-France (69)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Artisan Hoffmann Père et Fils — Tous droits réservés</span>
+      <a href="https://sakuragroup.fr" target="_blank" rel="noopener">Site créé par Agence Sakura Group</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('open');
+    }
+
+    // Smooth scroll pour les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
