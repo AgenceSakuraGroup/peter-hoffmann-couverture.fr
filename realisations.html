@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Réalisations – Artisan Hoffmann | Couverture, Zinguerie, Ravalement</title>
+<meta name="description" content="Découvrez toutes les réalisations d'Artisan Hoffmann : couverture, zinguerie, ravalement de façades. Photos avant/après de nos chantiers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://peter-hoffmann-couverture.fr/realisations.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,wght@1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--vert:#1B6B3A;--vert2:#145230;--vert3:#4CAF78;--vertl:#EBF5EE;--or:#C8973A;--orl:#FDF6E8;--texte:#1A1A1A;--textem:#4A4A4A;--blanc:#FAFAF8;--gris:#F2F2EF}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--texte);background:var(--blanc);padding-top:68px}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5vw;height:68px;display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s;background:rgba(250,250,248,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{width:36px;height:36px;background:var(--vert);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.nav-logo-text{font-family:'Bebas Neue',sans-serif;font-weight:800;font-size:15px;color:var(--texte);line-height:1.2}
+.nav-logo-text span{display:block;font-weight:700;font-size:11px;color:var(--vert);letter-spacing:1px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-size:14px;font-weight:500;color:var(--texte);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--vert)}
+.nav-links a.active{color:var(--vert);font-weight:600}
+.nav-cta{background:var(--vert);color:#fff!important;padding:.55rem 1.3rem;border-radius:100px;font-weight:600!important;transition:background .2s,transform .2s,box-shadow .2s!important}
+.nav-cta:hover{background:var(--vert2)!important;transform:translateY(-1px);box-shadow:0 6px 20px rgba(27,107,58,.3)}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--texte);border-radius:2px}
+.nav-mobile{display:none;position:fixed;top:68px;left:0;right:0;background:var(--blanc);border-top:1px solid rgba(0,0,0,.07);padding:1.5rem 5vw 2rem;z-index:99}
+.nav-mobile a{display:block;font-size:16px;font-weight:500;color:var(--texte);text-decoration:none;padding:.75rem 0;border-bottom:1px solid var(--gris)}
+/* PAGE HERO */
+.page-hero{background:linear-gradient(135deg,var(--vert) 0%,var(--vert2) 100%);padding:4rem 5vw 3rem;text-align:center;color:#fff}
+.page-hero .eyebrow{font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:.75rem}
+.page-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,6vw,4rem);letter-spacing:.04em;margin-bottom:1rem}
+.page-hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:560px;margin:0 auto}
+/* GALERIE */
+.section{padding:4rem 5vw}
+.gallery-intro{text-align:center;margin-bottom:2.5rem}
+.gallery-intro h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.04em;color:var(--texte);margin-bottom:.5rem}
+.gallery-intro p{color:var(--textem);font-size:.95rem}
+/* Grille masonry-like */
+.gallery-grid{
+  columns:3;
+  column-gap:1rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+.gallery-item{
+  break-inside:avoid;
+  margin-bottom:1rem;
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+}
+.gallery-item img{
+  width:100%;
+  display:block;
+  transition:transform .4s;
+}
+.gallery-item:hover img{transform:scale(1.04)}
+.ba-tag{position:absolute;top:.6rem;left:.6rem;font-size:10px;font-weight:700;padding:.25rem .6rem;border-radius:100px;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
+.ba-tag.avant{background:rgba(220,53,69,.85);color:#fff}
+.ba-tag.apres{background:rgba(27,107,58,.85);color:#fff}
+/* Catégorie titre */
+.cat-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.05em;color:var(--vert);margin:2.5rem 0 1rem;max-width:1200px;margin-left:auto;margin-right:auto;padding:0}
+.cat-title::after{content:'';display:block;width:50px;height:3px;background:var(--vert);border-radius:2px;margin-top:.3rem}
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;align-items:center;justify-content:center;cursor:pointer}
+.lightbox.active{display:flex}
+.lightbox img{max-width:92vw;max-height:90vh;object-fit:contain;border-radius:8px}
+.lb-close{position:absolute;top:1.2rem;right:1.5rem;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);color:#fff;border:none;font-size:2rem;padding:.5rem 1rem;cursor:pointer;border-radius:8px;backdrop-filter:blur(4px)}
+.lb-prev{left:1rem}
+.lb-next{right:1rem}
+/* Retour */
+.btn-back{display:inline-flex;align-items:center;gap:.5rem;background:var(--vertl);color:var(--vert);padding:.7rem 1.5rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;transition:all .3s;margin-top:2rem}
+.btn-back:hover{background:var(--vert);color:#fff}
+/* FOOTER */
+footer{background:#1a1a1a;color:rgba(255,255,255,.7);padding:3rem 5vw 1.5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#fff;margin-bottom:.75rem;letter-spacing:.04em}
+footer h4{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin-bottom:.75rem}
+footer a{display:block;color:rgba(255,255,255,.6);text-decoration:none;font-size:.88rem;margin-bottom:.4rem;transition:color .2s}
+footer a:hover{color:#fff}
+footer p{font-size:.88rem;line-height:1.6}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.25rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.footer-bottom p{font-size:.8rem}
+/* RESPONSIVE */
+@media(max-width:900px){
+  .gallery-grid{columns:2}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+}
+@media(max-width:540px){
+  .gallery-grid{columns:1}
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">🏠</div>
+    <div class="nav-logo-text">Artisan Hoffmann<span>Couverture · Ravalement</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#services">Services</a>
+    <a href="zones.html">Zones</a>
+    <a href="realisations.html" class="active">Réalisations</a>
+    <a href="blog.html">Blog</a>
+    <a href="qui-sommes-nous.html">À propos</a>
+    <a href="index.html#contact" class="nav-cta">Devis gratuit →</a>
+  </div>
+  <div class="nav-burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html#services">Services</a>
+  <a href="zones.html">Zones d'intervention</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="blog.html">Blog & Conseils</a>
+  <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+  <a href="index.html#contact">Devis gratuit</a>
+</div>
+
+<div class="page-hero">
+  <div class="eyebrow">Portfolio</div>
+  <h1>Toutes nos Réalisations</h1>
+  <p>Couverture, zinguerie, ravalement de façades — découvrez nos chantiers avant & après.</p>
+</div>
+
+<section class="section">
+
+  <!-- CAT 1 : Ravalement de façades -->
+  <div class="cat-title">Ravalement de façades</div>
+  <div class="gallery-grid" id="gallery">
+
+    <div class="gallery-item" onclick="openLb(0)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_17_25.jpeg" alt="Ravalement façade avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(1)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_19_55__1_.jpeg" alt="Ravalement façade après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(2)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_14_12.jpeg" alt="Ravalement façade volets bleus avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(3)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_14_12__1_.jpeg" alt="Ravalement façade volets bleus après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(4)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_17_43.jpeg" alt="Ravalement chantier" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(5)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_17_43__1_.jpeg" alt="Ravalement chantier" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(6)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_17_25__1_.jpeg" alt="Ravalement avec nacelle" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(7)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_19_55.jpeg" alt="Ravalement après" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(8)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_20_00.jpeg" alt="Ravalement façade" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(9)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_20_11.jpeg" alt="Chantier ravalement" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(10)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_10_09.jpeg" alt="Façade avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(11)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_10_09__1_.jpeg" alt="Façade après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(12)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_10_25.jpeg" alt="Ravalement avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(13)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_10_25__1_.jpeg" alt="Ravalement après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(14)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_14_25.jpeg" alt="Ravalement façade" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(15)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_14_44.jpeg" alt="Façade avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(16)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_14_44__1_.jpeg" alt="Façade après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(17)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_15_02.jpeg" alt="Ravalement terminé" loading="lazy">
+    </div>
+
+  </div>
+
+  <!-- CAT 2 : Couverture & Toiture -->
+  <div class="cat-title">Couverture & Toiture</div>
+  <div class="gallery-grid">
+
+    <div class="gallery-item" onclick="openLb(18)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_28.jpeg" alt="Toiture avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(19)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_16__1_.jpeg" alt="Toiture après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(20)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_15_25.jpeg" alt="Toiture ardoise avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(21)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-27_at_00_15_25__1_.jpeg" alt="Toiture ardoise après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(22)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_16.jpeg" alt="Pose tuiles" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(23)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_16__2_.jpeg" alt="Couverture chantier" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(24)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_28__1_.jpeg" alt="Toiture rénovée" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(25)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_28__2_.jpeg" alt="Toiture tuiles canal" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(26)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_18_47.jpeg" alt="Toiture chantier" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(27)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_13_38.jpeg" alt="Toiture pierre avant nettoyage" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(28)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_13_38__1_.jpeg" alt="Toiture pierre après nettoyage" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+
+  </div>
+
+  <!-- CAT 3 : Zinguerie & Cheminées -->
+  <div class="cat-title">Zinguerie & Cheminées</div>
+  <div class="gallery-grid">
+
+    <div class="gallery-item" onclick="openLb(29)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_16_08.jpeg" alt="Cheminée avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(30)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_16_08__1_.jpeg" alt="Cheminée après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(31)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_21_47.jpeg" alt="Zinguerie chantier" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(32)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_21_47__1_.jpeg" alt="Cheminée rénovée" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(33)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_21_53.jpeg" alt="Zinguerie travaux" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(34)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_21_53__1_.jpeg" alt="Cheminée zinc" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(35)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_22_01.jpeg" alt="Zinguerie détail" loading="lazy">
+    </div>
+    <div class="gallery-item" onclick="openLb(36)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_14_19.jpeg" alt="Cheminée avant" loading="lazy">
+      <span class="ba-tag avant">Avant</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(37)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_14_19__1_.jpeg" alt="Cheminée après" loading="lazy">
+      <span class="ba-tag apres">Après</span>
+    </div>
+    <div class="gallery-item" onclick="openLb(38)">
+      <img src="https://agencesakuragroup.github.io/-lagage-Villeneuve-Loubet/images/WhatsApp_Image_2026-06-26_at_23_14_19__2_.jpeg" alt="Zinguerie finitions" loading="lazy">
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:3rem">
+    <a href="index.html" class="btn-back">← Retour à l'accueil</a>
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lb" onclick="closeLb(event)">
+  <span class="lb-close" onclick="closeLb2()">✕</span>
+  <button class="lb-nav lb-prev" onclick="event.stopPropagation();lbNav(-1)">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" onclick="event.stopPropagation();lbNav(1)">›</button>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">Artisan Hoffmann</div><p>Expert en couverture, zinguerie et ravalement. Intervention dans toute la région.</p><p style="margin-top:1rem">📞 <a href="tel:0672449246" style="display:inline">06 72 44 92 46</a></p></div>
+    <div><h4>Services</h4><a href="index.html#services">Couverture</a><a href="index.html#services">Zinguerie</a><a href="index.html#services">Ravalement</a><a href="index.html#services">Réparations</a></div>
+    <div><h4>Navigation</h4><a href="index.html">Accueil</a><a href="realisations.html">Réalisations</a><a href="zones.html">Zones d'intervention</a><a href="blog.html">Blog</a><a href="qui-sommes-nous.html">Qui sommes-nous</a></div>
+    <div><h4>Contact</h4><a href="tel:0672449246">06 72 44 92 46</a><a href="tel:0645466679">06 45 46 66 79</a><a href="mailto:piterhoffemann@gmail.com">piterhoffemann@gmail.com</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Artisan Hoffmann – M. Hoffmann Couvreur</p>
+    <p>Site réalisé par <a href="https://sakuragroup.fr" target="_blank" style="color:rgba(255,255,255,.5);text-decoration:none">Agence Sakura Group</a></p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  var m=document.getElementById('navMobile');
+  m.style.display=m.style.display==='block'?'none':'block';
+}
+
+// Lightbox
+var lbCurrent=0;
+var allImgs=[];
+function buildImgList(){
+  allImgs=Array.from(document.querySelectorAll('.gallery-item img')).map(i=>i.src);
+}
+function openLb(i){
+  if(!allImgs.length)buildImgList();
+  lbCurrent=i;
+  document.getElementById('lbImg').src=allImgs[i];
+  document.getElementById('lb').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeLb(e){
+  if(e.target===document.getElementById('lb')){closeLb2();}
+}
+function closeLb2(){
+  document.getElementById('lb').classList.remove('active');
+  document.body.style.overflow='';
+}
+function lbNav(dir){
+  lbCurrent=(lbCurrent+dir+allImgs.length)%allImgs.length;
+  document.getElementById('lbImg').src=allImgs[lbCurrent];
+}
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('lb').classList.contains('active'))return;
+  if(e.key==='ArrowRight')lbNav(1);
+  if(e.key==='ArrowLeft')lbNav(-1);
+  if(e.key==='Escape')closeLb2();
+});
+</script>
+</body>
+</html>
